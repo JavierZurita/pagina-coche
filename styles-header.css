@@ -1,6 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
+header{
+    background-image: url(./images/back-header.png);
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .header__img{
     position: relative;
@@ -14,12 +18,15 @@
     height: 800px;
 }
 .nav{
+    width: 100%;
     display: flex;
-    position: absolute;
-    top: 0px;
     height: 100px;
-    left: 15%;
-    right: 15%;
+    justify-content: center;
+
+}
+.nav--left{
+    display: flex;
+    width: 60%;
     border-bottom: 2px solid grey;
     justify-content: space-between;
 }
@@ -49,20 +56,18 @@
     height: 30px;
 }
 .nav__logo{
-    position: absolute;
     top: 0px;
     height: 100px;
     right: 8%;
+    margin-left: 25px;
 }
 .nav__logo img{
     height: 100px;
     width: 100px;
 }
 .nav__texto{
-    position: absolute;
-    top: 75%;
     color: white;
-    left: 5%;
+    margin-left: 100px;
 }
 .nav__texto--btn{
     color: white;
@@ -72,12 +77,15 @@
     border: none;
 }
 
-
-a{
+.nav a{
     text-decoration: none;   
     color: white;
     font-size: 16px;
 }
-a:visited{
+.nav a:visited{
     text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 46px;
 }
